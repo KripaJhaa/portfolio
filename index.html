@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portforlio</title>
+</head>
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="particle.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="particle.js"></script>
+<style>
+
+body {
+    font-family: "roboto", sans-serif;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: tomato;
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align:center;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #eeeeee;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover{
+    color: #f1f1f1;
+    text-decoration: underline;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .sidenav .content{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .clients,
+  .Work,
+  .about,
+  .contact{
+      width: 100%;
+      height: 800px;
+  }
+
+  
+  .clients{
+    background-color: rgba(35, 246, 141,0.3);
+  }
+  
+  .about{
+    background-color: rgba(235, 92, 10, 0.8);
+  }
+  .Work{
+    background-color: rgb(117, 112, 112);
+  }
+  .contact{
+    background-color: rgba(199, 91, 241, 0.3);
+  }
+
+
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  
+  </style>
+  </head>
+  <body id="particles-js">
+    
+    <span style="color: white;font-size:30px;cursor:pointer;position: fixed;padding:5px" onclick="openNav()">&#9776;</span>
+  
+  <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+      <div class="content">
+        <a href="#about" onclick="closeNav()">About Me</a>
+        <a href="#Work" onclick="closeNav()">Work Experience</a>
+        <a href="#clients" onclick="closeNav()">Clients</a>
+        <a href="#contact" onclick="closeNav()">Contact me</a>
+    </div>
+  </div>
+  
+  <div id="about" class="about">
+        <div class="aboutMe" style="
+        font-family: roboto;
+        font-weight: 400;
+        color: white;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        font-size: x-large;
+        text-transform: capitalize;
+        text-shadow: 3px 2px red;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);">
+
+        <div class="wrapper">
+  
+            <img src="https://media.licdn.com/dms/image/C5103AQGeaLeHCRiuEQ/profile-displayphoto-shrink_200_200/0?e=1560988800&v=beta&t=Yf4yDe36hTniQXok6RyOgtrU2ucW5NzfmS4bhUA6S4w" alt="" class="image--cover" />
+           
+          </div>
+
+        <h4 class="desc">    
+        My Name is Kripa And I am
+        </h4>
+        
+         <div class="typewrite" data-period="2500" data-type='[ " Software developer.", "Full Stack developer.", "Web Engineer.", "Problem Solver." ]'>
+             <span class="wrap"></span>
+        </div>
+        
+        </div>
+
+
+  </div>
+  <div id="Work" class="Work">
+    <div class="Workdisc" style="padding: 100px;">
+    <div class="row">
+      <div class="col-md-6 card">
+          WORK EXPERIENCE
+          07/2018 – Present
+          Software Developer Helloverify India Pvt ltd     
+          Noida,India Is a Automated background veriﬁcation check company with their product called helloverify. Redesigned Helloverify the entire front-end product which is having bunch of packages and customization option, using Angular and state management tools including some promising libraries along with test. Maintained system to deploy data over AWS S3 bucket and utilizing EC2 servers for faster computation which led in improvement in the whole process by 40%. Actively involved in designing well structured Api's along with documentation using(Swagger) and node js libraries. Technologies: Angular,Jasmine, Node js, Express, jwt, oauth,swagger
+          
+      </div>
+      <div class="col-md-6 card"></div>
+    </div>
+    </div>
+  </div>
+  <div id="clients" class="clients"></div>
+  <div id="contact" class="contact"></div>
+
+
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+
+ 
+  </script>
+     
+  </body>
+  </html> 
+  
